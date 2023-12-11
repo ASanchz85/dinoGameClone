@@ -2,12 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/dino-stationary.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Dino Game - VanillaJS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="world" data-world>
+      <h3 class="score-title">Score:</h3>
+      <div class="score" data-score>0</div>
+      <div class="start-screen" data-start-screen>Press any key to start playing</div>
+      <img src="/ground.png" alt="ground" class="ground" data-ground>
+      <img src="/ground.png" alt="ground" class="ground" data-ground>
+      <img src="/dino-stationary.png" alt="dino" class="dino" data-dinosaur>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
